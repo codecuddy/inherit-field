@@ -59,65 +59,13 @@ function nextDayClick() {
  
 
 
-/*
-
-// puts 1 to 8000 in an array
-
-    var allNumbersArray = [0, 1]
-    var primeNumbersArray = ['', 2, 3, 5, 7]
-    function findPrimes() {        
-        for (var i = 2; i < 8000; i++) {
-        allNumbersArray.push(i);
-            if (i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 7 !== 0 && i % Math.sqrt(i) !==0) {
-            primeNumbersArray.push(i);  
-            }    
-        }
-    }
-    findPrimes();
-
-
-// if (primeNumbersArray[i] divides into i then do not put it in primeNumbersArray)
-
-var myIndex = 1;
-var currentPrimeNumber = document.getElementById('currentPrimeNumber');
-var previousPrimeNumber = document.getElementById('previousPrimeNumber');
-var futurePrimeNumber = document.getElementById('futurePrimeNumber');
-
-currentPrimeNumber.innerHTML = primeNumbersArray[0]; //Print first value of array right away.
-previousPrimeNumber.innerHTML = primeNumbersArray[0];
-futurePrimeNumber.innerHTML = primeNumbersArray[1];
-
-function nextPrimeClick() {
-  if (myIndex < primeNumbersArray.length) {
-     currentPrimeNumber.innerHTML = primeNumbersArray[myIndex];
-     previousPrimeNumber.innerHTML = primeNumbersArray[myIndex - 1];
-     futurePrimeNumber.innerHTML = primeNumbersArray[myIndex + 1];
-     myIndex++;
-  }
-  else {
-     currentPrimeNumber.innerHTML = "CONGRATS! You made it through first 1000 Prime Numbers!";   
-  }
-};
-
-
-*/
-
-
-
-
 
 
 
 
 /*
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
 
-myButton.addEventListener('click', doSomething, false)
-
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
+Step by step through my thought process... 
 
 
 
