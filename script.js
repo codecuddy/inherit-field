@@ -1,47 +1,62 @@
-var day = 0;
+var day = 1;
 var youngerBrotherPercent = document.getElementById('youngerBrotherPercent');
 var olderBrotherPercent = document.getElementById('olderBrotherPercent');
 
-function nextDayClick() {
-  if (day < 365) {
-     youngerBrotherPercent.innerHTML =  /* primeNumbersArray[myIndex]; */
-     olderBrotherPercent.innerHTML = /* primeNumbersArray[myIndex - 1]; */
-     day++;
-  }
-  else {
-     youngerBrotherPercent.innerHTML = "That was a full year... the brother's are tired of dividing their field.";
-     olderBrotherPercent.innerHTML = "";
-  }
+var percentArray1 = [0.5]
+var percentArray2 = [0.5]
 
+function count() {
+    var value1 = 1/2;
+    var value2 = 1/2;  
+    for(i = 0; i < 42; i++) {
 
-var value1 = 1/2;
+        var value1 = value1 - value1/3;
 
-var value2 = 1/2;
+        var value2 = value2 + value1/2;
 
-function sunSet() {
-    for (var day = 0; day < 365; day++) {
-   
-    var value1 = value1 - value1/3;
+        var value2 = value2 - value2/3;
 
-    var value2 = value2 + value1/2;
+        var value1 = value1 + value2/2;
 
-    var value2 = value2 - value2/3;
-
-    var value1 = value1 + value2/2;
-
-    var value2 = 1 - value1; 
-    
-    console.log(value1);
-    
-    console.log(value2);
-    
+        var value2 = 1 - value1; 
         
+        percentArray1.push(value1);
+        percentArray2.push(value2);
+
+
+        console.log("younger: " + value1*100 + "%");
+
+        console.log("older: " + value2*100  + "%");
+
+        console.log(percentArray1);
+        console.log(percentArray2);
     }
+}
+count();
+
+function nextDayClick() {
+    
+  if (day < 42) {
+
+     dayCount.innerHTML = day;
+     youngerBrotherPercent.innerHTML = percentArray1[day]*100;
+     olderBrotherPercent.innerHTML = percentArray2[day]*100;
+     console.log(day);
+     day++;
+     console.log(percentArray1);
+ 
+  }
+    
+  else {
+     dayCount.innerHTML = "42 - infinitly small exchange of land - no noticable increase or decrease."
+     youngerBrotherPercent.innerHTML = " 60";
+     olderBrotherPercent.innerHTML = " 40";
+  }
 
 }
 
 
-
+ 
 
 
 /*
@@ -103,6 +118,9 @@ myButton.addEventListener('click', doSomething, false)
 function doSomething() {
 	myText.textContent = "hello, world!";
 }
+
+
+
 var day = 0;
 var field = 1/2;
 var peter = field - (field/3);
