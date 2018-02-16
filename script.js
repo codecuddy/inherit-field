@@ -8,7 +8,7 @@ var percentArray2 = [0.5]
 function count() {
     var value1 = 1/2;
     var value2 = 1/2;  
-    for(i = 0; i < 42; i++) {
+    for(i = 0; i < 44; i++) {
 
         var value1 = value1 - value1/3;
 
@@ -36,7 +36,7 @@ count();
 
 function nextDayClick() {
     
-  if (day < 42) {
+  if (day < 44) {
 
      dayCount.innerHTML = day;
      youngerBrotherPercent.innerHTML = percentArray1[day]*100;
