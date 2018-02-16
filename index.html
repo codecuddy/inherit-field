@@ -3,8 +3,12 @@
 <html>
     <head>
         <title>Wheat Field</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
 
 <!-- ##############
@@ -15,42 +19,53 @@
     <div class="jumbotron">
     	<div class="container">
             <h1 id="title">Wheat Field</h1>
-            <div class="premis">
-                <p>Two brothers inherit a large wheat field. They decide to split the field 
-                   perfectly in half. However, later that night the younger brother feels that 
-                   his older brother deserves more, and so without telling him, he gives his 
-                   older brother one third of his portion. The older brother, has the same thought, 
-                   and decides to give his brother one third of his land (not realizing that 
-                   his current land was more than half of the field because of the gift from his brother). Answer the following:</p>
+            <div class="row">
+                <hr>
+                <p class="intro">Two brothers inherit a large wheat field. They decide to split the field perfectly in half. However, later that night the younger brother feels that his older brother deserves more, and so without telling him, he gives his 
+                older brother one third of his portion. The older brother, has the same thought, 
+                and decides to give his brother one third of his land (not realizing that 
+                his current land was more than half of the field because of the gift from his brother). Answer the following:</p>
+                <hr>
             </div>
 		</div>
-		<div class="questions">
-			<p>What percent of the entire field does the younger and older brother now own?</p>
+        <div class="container">
+            <div class="row">
+                <div class="questions">
+                    <h3>Questions</h3>
+                    <ol>
+                        <li>After both brothers secretly gift one third of their fields, what percent of the entire field does the younger and older brother now own?</li>
+
+                        <li>What if the brothers continued giving one third of their field to the other each night, what percent would each own after ten nights? </li>
+
+                        <li>Deeper thinking: What will happen as the amount of days the brothers gift land approaches infinity? </li>
+                    </ol>
+                </div>
+                <hr>	
+            </div>
+        </div>
 		
-			<p>What if the brothers continued giving one third of their field to the other each night, 
-			   what percent would each own after ten nights? </p>
-            
-            <p>Deeper thinking: What will happen as the amount of days approaches infinity? </p>
-		</div>
-		
-		<div>
-		    <div class="results">
+		<div class="container">
+		    <div class="row">
                 <h2 class="dayCount">Day: <span id="dayCount"> 0</span> </h2>
-                <h2 class="brothers">Younger Brother: <span id="youngerBrotherPercent">  50</span>% </h3>
-                <h2 class="brothers">Older Brother:<span id="olderBrotherPercent"> 50</span>%</h3>
-		    </div>
+                <div class="brothers">
+                    <h2 class="brother">Younger Brother:</h2><span class="percent" id="youngerBrotherPercent">50%</span>
+                    <h2 class="brother">Older Brother:</h2><span class="percent" id="olderBrotherPercent">50%</span>
+                </div>
+            </div>
+        </div>
 		    </br>
 		    <div id="nextDayButtonDiv">
-		        <button class="button" id="nextDay" onclick="nextDayClick();">Next Day</button> 
+		        <button class="button" id="nextDay" onclick="nextDayClick();">Next Day</button>
 		    </div>
-	    </div>
+ </div>
 	    
 <!-- ##############
 	 ### FOOTER ###
 	 ##############  -->
 	 
-	    </br><hr>
+
 	    <div class="footer">
+            </br><hr>
             <p>&#169 Charlie Cuddy</br> <a href="https://github.com/codecuddy/inherit-field">Hosted on GitHub</a></p>
 	    </div>
     </div>

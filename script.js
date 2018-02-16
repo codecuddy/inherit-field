@@ -39,8 +39,8 @@ function nextDayClick() {
   if (day < 44) {
 
      dayCount.innerHTML = day;
-     youngerBrotherPercent.innerHTML = percentArray1[day]*100;
-     olderBrotherPercent.innerHTML = percentArray2[day]*100;
+     youngerBrotherPercent.innerHTML = percentArray1[day]*100 + "%";
+     olderBrotherPercent.innerHTML = percentArray2[day]*100 + "%";
      console.log(day);
      day++;
      console.log(percentArray1);
@@ -49,8 +49,8 @@ function nextDayClick() {
     
   else {
      dayCount.innerHTML = "42 - infinitly small exchange of land - no noticable increase or decrease."
-     youngerBrotherPercent.innerHTML = " 60";
-     olderBrotherPercent.innerHTML = " 40";
+     youngerBrotherPercent.innerHTML = " nearing 60%";
+     olderBrotherPercent.innerHTML = " nearing 40%";
   }
 
 }

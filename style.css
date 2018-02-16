@@ -4,26 +4,30 @@ body {
 }
 
 .jumbotron {
+    content: "";
+    clear: both;
+    display: table;
+    margin: auto;
     background-color: navy;
 }
 
 #title {
+    margin-top: 0px;
     text-align: center;
     color: orangered;
 
 }
 
 .container {
-    padding: 40px 60px 5px 60px;
+    padding: 0px 60px 0px 60px;
 }
 
-.premis {
+.intro {
     font-style: italic;
 }
 
 .questions {
-    padding-left: 60px;
-    padding-right: 60px;
+    font-size: 18px;  
 }
 
 .dayCount {
@@ -36,15 +40,15 @@ body {
 }
 
 .brothers {
-    display: flex;
-    font-size: 32px;
-    padding-left: 80px;
-    width: 600px;
+    width: 100%;
+    text-align: center;
+
 }
 
-#youngerBrotherPercent, #olderBrotherPercent {
+.percent {
     color: orangered;
-    padding-left: 10px;
+    padding-left: 20px; 
+    font-size: 24px;
 }
 
 #nextDayButtonDiv {
@@ -54,7 +58,7 @@ body {
 }
 
 .button {
-    font-size: 30px;
+    font-size: 24px;
     border-radius: 5px;
     background-color: orangered;
     color: navy;
@@ -62,9 +66,9 @@ body {
 
 .footer {
     text-align: center;
-    font-size: 16px;
-    margin: 25px;
     color: silver;
+    font-size: 16px;
+
 }
 
 a {
@@ -74,3 +78,4 @@ a {
 hr {
     border: .8px solid green;
 }
+
