@@ -7,7 +7,6 @@ body {
     content: "";
     clear: both;
     display: table;
-    margin: auto;
     background-color: navy;
 }
 
@@ -40,7 +39,7 @@ body {
 }
 
 .brothers {
-    width: 100%;
+    display: flex;
     text-align: center;
 
 }
