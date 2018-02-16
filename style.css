@@ -41,6 +41,7 @@ body {
 .brothers {
     display: flex;
     text-align: center;
+    width: 460px;
 
 }
 
