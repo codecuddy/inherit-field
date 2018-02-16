@@ -18,6 +18,8 @@ body {
 }
 
 .container {
+    padding: 0px 20px 0px 20px;
+
 }
 
 .intro {
@@ -39,7 +41,7 @@ body {
 
 .brothers {
     text-align: center;
-    width: 460px;
+    width: 400px;
 
 }
 
